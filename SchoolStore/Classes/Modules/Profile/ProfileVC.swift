@@ -28,6 +28,5 @@ class ProfileVC: UIViewController {
     @IBAction func logoutPressed(_: Any) {
         // TODO: Add service call here
         UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.rootViewController = VCFactory.buildAuthVC()
-         
     }
 }

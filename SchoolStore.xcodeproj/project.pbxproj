@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		987C43462708A31F00FD5E0A /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 987C43452708A31F00FD5E0A /* KeychainAccess */; };
-		987C43492708AB1C00FD5E0A /* TTGSnackbar in Frameworks */ = {isa = PBXBuildFile; productRef = 987C43482708AB1C00FD5E0A /* TTGSnackbar */; };
-		98D1108227098965006CF69B /* KeyboardManager in Frameworks */ = {isa = PBXBuildFile; productRef = 98D1108127098965006CF69B /* KeyboardManager */; };
+		98C7FD31270A2D9A001CB4CD /* MintKit in Frameworks */ = {isa = PBXBuildFile; productRef = 98C7FD30270A2D9A001CB4CD /* MintKit */; };
+		98C7FD34270A2E7F001CB4CD /* SwiftLintFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 98C7FD33270A2E7F001CB4CD /* SwiftLintFramework */; };
+		98C7FD37270A2E8E001CB4CD /* AutoLayoutSugar in Frameworks */ = {isa = PBXBuildFile; productRef = 98C7FD36270A2E8E001CB4CD /* AutoLayoutSugar */; };
+		98DA0A46270B86D500996111 /* getUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DA0A45270B86D500996111 /* getUser.json */; };
+		98DA0A48270B889F00996111 /* patchUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DA0A47270B889F00996111 /* patchUser.json */; };
 		C21E13202704510C00867E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21E131F2704510C00867E2E /* AppDelegate.swift */; };
 		C21E13292704510E00867E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C21E13282704510E00867E2E /* Assets.xcassets */; };
 		C21E132C2704510E00867E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C21E132A2704510E00867E2E /* LaunchScreen.storyboard */; };
@@ -43,10 +45,12 @@
 		C2D720A427048AAF00C40EA5 /* DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D720A327048AAF00C40EA5 /* DataResponse.swift */; };
 		C2D720A727048AF000C40EA5 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D720A627048AF000C40EA5 /* AuthResponse.swift */; };
 		C2D720A927048B1A00C40EA5 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D720A827048B1A00C40EA5 /* Profile.swift */; };
-		C2F28B3B27048E92000A2703 /* auth.json in Resources */ = {isa = PBXBuildFile; fileRef = C2F28B3A27048E92000A2703 /* auth.json */; };
+		C2F28B3B27048E92000A2703 /* putUserSingin.json in Resources */ = {isa = PBXBuildFile; fileRef = C2F28B3A27048E92000A2703 /* putUserSingin.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		98DA0A45270B86D500996111 /* getUser.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getUser.json; sourceTree = "<group>"; };
+		98DA0A47270B889F00996111 /* patchUser.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = patchUser.json; sourceTree = "<group>"; };
 		C21E131C2704510C00867E2E /* SchoolStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C21E131F2704510C00867E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C21E13282704510E00867E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,7 +86,7 @@
 		C2D720A327048AAF00C40EA5 /* DataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponse.swift; sourceTree = "<group>"; };
 		C2D720A627048AF000C40EA5 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		C2D720A827048B1A00C40EA5 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		C2F28B3A27048E92000A2703 /* auth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = auth.json; sourceTree = "<group>"; };
+		C2F28B3A27048E92000A2703 /* putUserSingin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = putUserSingin.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,15 +94,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				987C43462708A31F00FD5E0A /* KeychainAccess in Frameworks */,
-				987C43492708AB1C00FD5E0A /* TTGSnackbar in Frameworks */,
-				98D1108227098965006CF69B /* KeyboardManager in Frameworks */,
+				98C7FD34270A2E7F001CB4CD /* SwiftLintFramework in Frameworks */,
+				98C7FD37270A2E8E001CB4CD /* AutoLayoutSugar in Frameworks */,
+				98C7FD31270A2D9A001CB4CD /* MintKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C213C1C42704C52700E84711 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		C21E13132704510C00867E2E = {
 			isa = PBXGroup;
 			children = (
@@ -147,13 +158,6 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		C21E133527045A4C00867E2E /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
 		C21E133627045A6300867E2E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,9 +174,9 @@
 		C21E133727045A6B00867E2E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C213C1C42704C52700E84711 /* UIKit */,
 				C21E136A27046DB500867E2E /* Generated */,
 				C21E131F2704510C00867E2E /* AppDelegate.swift */,
-				C21E133527045A4C00867E2E /* UIKit */,
 				C21E133427045A3F00867E2E /* Modules */,
 				C21E133327045A3100867E2E /* Business */,
 			);
@@ -320,7 +324,9 @@
 		C2F28B3927048D27000A2703 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				C2F28B3A27048E92000A2703 /* auth.json */,
+				C2F28B3A27048E92000A2703 /* putUserSingin.json */,
+				98DA0A45270B86D500996111 /* getUser.json */,
+				98DA0A47270B889F00996111 /* patchUser.json */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -344,9 +350,9 @@
 			);
 			name = SchoolStore;
 			packageProductDependencies = (
-				987C43452708A31F00FD5E0A /* KeychainAccess */,
-				987C43482708AB1C00FD5E0A /* TTGSnackbar */,
-				98D1108127098965006CF69B /* KeyboardManager */,
+				98C7FD30270A2D9A001CB4CD /* MintKit */,
+				98C7FD33270A2E7F001CB4CD /* SwiftLintFramework */,
+				98C7FD36270A2E8E001CB4CD /* AutoLayoutSugar */,
 			);
 			productName = SchoolStore;
 			productReference = C21E131C2704510C00867E2E /* SchoolStore.app */;
@@ -376,9 +382,9 @@
 			);
 			mainGroup = C21E13132704510C00867E2E;
 			packageReferences = (
-				987C43442708A31F00FD5E0A /* XCRemoteSwiftPackageReference "KeychainAccess" */,
-				987C43472708AB1C00FD5E0A /* XCRemoteSwiftPackageReference "TTGSnackbar" */,
-				98D1108027098965006CF69B /* XCRemoteSwiftPackageReference "KeyboardManager" */,
+				98C7FD2F270A2D9A001CB4CD /* XCRemoteSwiftPackageReference "Mint" */,
+				98C7FD32270A2E7E001CB4CD /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				98C7FD35270A2E8E001CB4CD /* XCRemoteSwiftPackageReference "auto-layout-sugar-ios" */,
 			);
 			productRefGroup = C21E131D2704510C00867E2E /* Products */;
 			projectDirPath = "";
@@ -397,7 +403,9 @@
 				C21E134927045C5600867E2E /* Auth.storyboard in Resources */,
 				C21E132C2704510E00867E2E /* LaunchScreen.storyboard in Resources */,
 				C21E13692704676800867E2E /* Profile.storyboard in Resources */,
-				C2F28B3B27048E92000A2703 /* auth.json in Resources */,
+				98DA0A48270B889F00996111 /* patchUser.json in Resources */,
+				98DA0A46270B86D500996111 /* getUser.json in Resources */,
+				C2F28B3B27048E92000A2703 /* putUserSingin.json in Resources */,
 				C21E133927045ADA00867E2E /* Localizable.strings in Resources */,
 				C21E13292704510E00867E2E /* Assets.xcassets in Resources */,
 				C21E13652704671A00867E2E /* Catalog.storyboard in Resources */,
@@ -688,47 +696,47 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		987C43442708A31F00FD5E0A /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+		98C7FD2F270A2D9A001CB4CD /* XCRemoteSwiftPackageReference "Mint" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			repositoryURL = "https://github.com/yonaskolb/Mint.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.2.2;
+				minimumVersion = 0.15.0;
 			};
 		};
-		987C43472708AB1C00FD5E0A /* XCRemoteSwiftPackageReference "TTGSnackbar" */ = {
+		98C7FD32270A2E7E001CB4CD /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/zekunyan/TTGSnackbar";
+			repositoryURL = "https://github.com/realm/SwiftLint";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.10.5;
+				minimumVersion = 0.44.0;
 			};
 		};
-		98D1108027098965006CF69B /* XCRemoteSwiftPackageReference "KeyboardManager" */ = {
+		98C7FD35270A2E8E001CB4CD /* XCRemoteSwiftPackageReference "auto-layout-sugar-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/alphatroya/KeyboardManager";
+			repositoryURL = "https://github.com/Heads-and-Hands/auto-layout-sugar-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.4.0;
+				minimumVersion = 1.0.6;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		987C43452708A31F00FD5E0A /* KeychainAccess */ = {
+		98C7FD30270A2D9A001CB4CD /* MintKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 987C43442708A31F00FD5E0A /* XCRemoteSwiftPackageReference "KeychainAccess" */;
-			productName = KeychainAccess;
+			package = 98C7FD2F270A2D9A001CB4CD /* XCRemoteSwiftPackageReference "Mint" */;
+			productName = MintKit;
 		};
-		987C43482708AB1C00FD5E0A /* TTGSnackbar */ = {
+		98C7FD33270A2E7F001CB4CD /* SwiftLintFramework */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 987C43472708AB1C00FD5E0A /* XCRemoteSwiftPackageReference "TTGSnackbar" */;
-			productName = TTGSnackbar;
+			package = 98C7FD32270A2E7E001CB4CD /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = SwiftLintFramework;
 		};
-		98D1108127098965006CF69B /* KeyboardManager */ = {
+		98C7FD36270A2E8E001CB4CD /* AutoLayoutSugar */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 98D1108027098965006CF69B /* XCRemoteSwiftPackageReference "KeyboardManager" */;
-			productName = KeyboardManager;
+			package = 98C7FD35270A2E8E001CB4CD /* XCRemoteSwiftPackageReference "auto-layout-sugar-ios" */;
+			productName = AutoLayoutSugar;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

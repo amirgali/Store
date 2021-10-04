@@ -1,8 +1,9 @@
 {
     "data": {
         "accessToken": "AAAAAAAAAAAAAAAAAAAAAFnz2wAAAAAACOwLSPtVT5gxxxxxxxxxxxx",
+        "Authorization": "Bearer AAAAAAAAAAAAAAAAAAAAAFnz2wAAAAAACOwLSPtVT5gxxxxxxxxxxxx",
         "profile": {
-            "name": "Аннна",
+            "name": "Анна",
             "surname": "Виноградова",
             "occupation": "Садовник"
         }
