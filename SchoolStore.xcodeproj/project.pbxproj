@@ -11,6 +11,9 @@
 		986699AE270C6C8800DDB1A8 /* getProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 986699AD270C6C8800DDB1A8 /* getProducts.json */; };
 		986699B0270C6D0800DDB1A8 /* getProductsId.json in Resources */ = {isa = PBXBuildFile; fileRef = 986699AF270C6D0800DDB1A8 /* getProductsId.json */; };
 		986699B2270C72EF00DDB1A8 /* OrdersRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986699B1270C72EF00DDB1A8 /* OrdersRequests.swift */; };
+		986699B4270C7B6800DDB1A8 /* postOrdersCheckout.json in Resources */ = {isa = PBXBuildFile; fileRef = 986699B3270C7B6800DDB1A8 /* postOrdersCheckout.json */; };
+		986699B6270C7B8700DDB1A8 /* getOrders.json in Resources */ = {isa = PBXBuildFile; fileRef = 986699B5270C7B8700DDB1A8 /* getOrders.json */; };
+		986699B8270C7BA000DDB1A8 /* putOrdersIdCancel.json in Resources */ = {isa = PBXBuildFile; fileRef = 986699B7270C7BA000DDB1A8 /* putOrdersIdCancel.json */; };
 		98C7FD31270A2D9A001CB4CD /* MintKit in Frameworks */ = {isa = PBXBuildFile; productRef = 98C7FD30270A2D9A001CB4CD /* MintKit */; };
 		98C7FD34270A2E7F001CB4CD /* SwiftLintFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 98C7FD33270A2E7F001CB4CD /* SwiftLintFramework */; };
 		98C7FD37270A2E8E001CB4CD /* AutoLayoutSugar in Frameworks */ = {isa = PBXBuildFile; productRef = 98C7FD36270A2E8E001CB4CD /* AutoLayoutSugar */; };
@@ -57,6 +60,9 @@
 		986699AD270C6C8800DDB1A8 /* getProducts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getProducts.json; sourceTree = "<group>"; };
 		986699AF270C6D0800DDB1A8 /* getProductsId.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getProductsId.json; sourceTree = "<group>"; };
 		986699B1270C72EF00DDB1A8 /* OrdersRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersRequests.swift; sourceTree = "<group>"; };
+		986699B3270C7B6800DDB1A8 /* postOrdersCheckout.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = postOrdersCheckout.json; sourceTree = "<group>"; };
+		986699B5270C7B8700DDB1A8 /* getOrders.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getOrders.json; sourceTree = "<group>"; };
+		986699B7270C7BA000DDB1A8 /* putOrdersIdCancel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = putOrdersIdCancel.json; sourceTree = "<group>"; };
 		98DA0A45270B86D500996111 /* getUser.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getUser.json; sourceTree = "<group>"; };
 		98DA0A47270B889F00996111 /* patchUser.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = patchUser.json; sourceTree = "<group>"; };
 		C21E131C2704510C00867E2E /* SchoolStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -339,6 +345,9 @@
 				98DA0A47270B889F00996111 /* patchUser.json */,
 				986699AD270C6C8800DDB1A8 /* getProducts.json */,
 				986699AF270C6D0800DDB1A8 /* getProductsId.json */,
+				986699B3270C7B6800DDB1A8 /* postOrdersCheckout.json */,
+				986699B5270C7B8700DDB1A8 /* getOrders.json */,
+				986699B7270C7BA000DDB1A8 /* putOrdersIdCancel.json */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -413,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C21E134927045C5600867E2E /* Auth.storyboard in Resources */,
+				986699B6270C7B8700DDB1A8 /* getOrders.json in Resources */,
 				C21E132C2704510E00867E2E /* LaunchScreen.storyboard in Resources */,
 				C21E13692704676800867E2E /* Profile.storyboard in Resources */,
 				98DA0A48270B889F00996111 /* patchUser.json in Resources */,
@@ -422,9 +432,11 @@
 				C21E13292704510E00867E2E /* Assets.xcassets in Resources */,
 				986699AE270C6C8800DDB1A8 /* getProducts.json in Resources */,
 				C21E13652704671A00867E2E /* Catalog.storyboard in Resources */,
+				986699B4270C7B6800DDB1A8 /* postOrdersCheckout.json in Resources */,
 				C21E133E27045B1900867E2E /* InfoPlist.strings in Resources */,
 				C21E134D27045C8A00867E2E /* TabBar.storyboard in Resources */,
 				C21E134227045B4900867E2E /* Localizable.stringsdict in Resources */,
+				986699B8270C7BA000DDB1A8 /* putOrdersIdCancel.json in Resources */,
 				986699B0270C6D0800DDB1A8 /* getProductsId.json in Resources */,
 				C21E13672704674D00867E2E /* History.storyboard in Resources */,
 			);
