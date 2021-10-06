@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9808DBEC270DD69A00102CC9 /* AuthCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9808DBEB270DD69A00102CC9 /* AuthCustomButton.swift */; };
+		9808DBEE270DD6AB00102CC9 /* AuthCustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9808DBED270DD6AB00102CC9 /* AuthCustomButton.xib */; };
 		982CCEEA270BF93F00B35E9E /* CatallogRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982CCEE9270BF93F00B35E9E /* CatallogRequests.swift */; };
 		986699AE270C6C8800DDB1A8 /* getProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 986699AD270C6C8800DDB1A8 /* getProducts.json */; };
 		986699B0270C6D0800DDB1A8 /* getProductsId.json in Resources */ = {isa = PBXBuildFile; fileRef = 986699AF270C6D0800DDB1A8 /* getProductsId.json */; };
@@ -14,8 +16,7 @@
 		986699B4270C7B6800DDB1A8 /* postOrdersCheckout.json in Resources */ = {isa = PBXBuildFile; fileRef = 986699B3270C7B6800DDB1A8 /* postOrdersCheckout.json */; };
 		986699B6270C7B8700DDB1A8 /* getOrders.json in Resources */ = {isa = PBXBuildFile; fileRef = 986699B5270C7B8700DDB1A8 /* getOrders.json */; };
 		986699B8270C7BA000DDB1A8 /* putOrdersIdCancel.json in Resources */ = {isa = PBXBuildFile; fileRef = 986699B7270C7BA000DDB1A8 /* putOrdersIdCancel.json */; };
-		98C7FD31270A2D9A001CB4CD /* MintKit in Frameworks */ = {isa = PBXBuildFile; productRef = 98C7FD30270A2D9A001CB4CD /* MintKit */; };
-		98C7FD34270A2E7F001CB4CD /* SwiftLintFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 98C7FD33270A2E7F001CB4CD /* SwiftLintFramework */; };
+		986699BB270CC7F100DDB1A8 /* KeyboardManager in Frameworks */ = {isa = PBXBuildFile; productRef = 986699BA270CC7F100DDB1A8 /* KeyboardManager */; };
 		98C7FD37270A2E8E001CB4CD /* AutoLayoutSugar in Frameworks */ = {isa = PBXBuildFile; productRef = 98C7FD36270A2E8E001CB4CD /* AutoLayoutSugar */; };
 		98DA0A46270B86D500996111 /* getUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DA0A45270B86D500996111 /* getUser.json */; };
 		98DA0A48270B889F00996111 /* patchUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DA0A47270B889F00996111 /* patchUser.json */; };
@@ -56,6 +57,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9808DBEB270DD69A00102CC9 /* AuthCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthCustomButton.swift; path = ../../../../../../../Desktop/test/test/AuthCustomButton.swift; sourceTree = "<group>"; };
+		9808DBED270DD6AB00102CC9 /* AuthCustomButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AuthCustomButton.xib; path = ../../../../../../../Desktop/test/test/AuthCustomButton.xib; sourceTree = "<group>"; };
 		982CCEE9270BF93F00B35E9E /* CatallogRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatallogRequests.swift; sourceTree = "<group>"; };
 		986699AD270C6C8800DDB1A8 /* getProducts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getProducts.json; sourceTree = "<group>"; };
 		986699AF270C6D0800DDB1A8 /* getProductsId.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getProductsId.json; sourceTree = "<group>"; };
@@ -108,9 +111,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98C7FD34270A2E7F001CB4CD /* SwiftLintFramework in Frameworks */,
 				98C7FD37270A2E8E001CB4CD /* AutoLayoutSugar in Frameworks */,
-				98C7FD31270A2D9A001CB4CD /* MintKit in Frameworks */,
+				986699BB270CC7F100DDB1A8 /* KeyboardManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +122,8 @@
 		C213C1C42704C52700E84711 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				9808DBEB270DD69A00102CC9 /* AuthCustomButton.swift */,
+				9808DBED270DD6AB00102CC9 /* AuthCustomButton.xib */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -371,9 +375,8 @@
 			);
 			name = SchoolStore;
 			packageProductDependencies = (
-				98C7FD30270A2D9A001CB4CD /* MintKit */,
-				98C7FD33270A2E7F001CB4CD /* SwiftLintFramework */,
 				98C7FD36270A2E8E001CB4CD /* AutoLayoutSugar */,
+				986699BA270CC7F100DDB1A8 /* KeyboardManager */,
 			);
 			productName = SchoolStore;
 			productReference = C21E131C2704510C00867E2E /* SchoolStore.app */;
@@ -403,9 +406,8 @@
 			);
 			mainGroup = C21E13132704510C00867E2E;
 			packageReferences = (
-				98C7FD2F270A2D9A001CB4CD /* XCRemoteSwiftPackageReference "Mint" */,
-				98C7FD32270A2E7E001CB4CD /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				98C7FD35270A2E8E001CB4CD /* XCRemoteSwiftPackageReference "auto-layout-sugar-ios" */,
+				986699B9270CC7F100DDB1A8 /* XCRemoteSwiftPackageReference "KeyboardManager" */,
 			);
 			productRefGroup = C21E131D2704510C00867E2E /* Products */;
 			projectDirPath = "";
@@ -436,6 +438,7 @@
 				C21E133E27045B1900867E2E /* InfoPlist.strings in Resources */,
 				C21E134D27045C8A00867E2E /* TabBar.storyboard in Resources */,
 				C21E134227045B4900867E2E /* Localizable.stringsdict in Resources */,
+				9808DBEE270DD6AB00102CC9 /* AuthCustomButton.xib in Resources */,
 				986699B8270C7BA000DDB1A8 /* putOrdersIdCancel.json in Resources */,
 				986699B0270C6D0800DDB1A8 /* getProductsId.json in Resources */,
 				C21E13672704674D00867E2E /* History.storyboard in Resources */,
@@ -498,6 +501,7 @@
 				C21E13552704619D00867E2E /* CoreFactory.swift in Sources */,
 				C21E13202704510C00867E2E /* AppDelegate.swift in Sources */,
 				C21E13592704647900867E2E /* Errors.swift in Sources */,
+				9808DBEC270DD69A00102CC9 /* AuthCustomButton.swift in Sources */,
 				C2D720A727048AF000C40EA5 /* AuthResponse.swift in Sources */,
 				C27E0F1D270473A20015530B /* Plist.swift in Sources */,
 				C21E13512704604400867E2E /* AppState.swift in Sources */,
@@ -724,20 +728,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		98C7FD2F270A2D9A001CB4CD /* XCRemoteSwiftPackageReference "Mint" */ = {
+		986699B9270CC7F100DDB1A8 /* XCRemoteSwiftPackageReference "KeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/yonaskolb/Mint.git";
+			repositoryURL = "https://github.com/alphatroya/KeyboardManager";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.15.0;
-			};
-		};
-		98C7FD32270A2E7E001CB4CD /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/SwiftLint";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.44.0;
+				minimumVersion = 1.6.1;
 			};
 		};
 		98C7FD35270A2E8E001CB4CD /* XCRemoteSwiftPackageReference "auto-layout-sugar-ios" */ = {
@@ -751,15 +747,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		98C7FD30270A2D9A001CB4CD /* MintKit */ = {
+		986699BA270CC7F100DDB1A8 /* KeyboardManager */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 98C7FD2F270A2D9A001CB4CD /* XCRemoteSwiftPackageReference "Mint" */;
-			productName = MintKit;
-		};
-		98C7FD33270A2E7F001CB4CD /* SwiftLintFramework */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 98C7FD32270A2E7E001CB4CD /* XCRemoteSwiftPackageReference "SwiftLint" */;
-			productName = SwiftLintFramework;
+			package = 986699B9270CC7F100DDB1A8 /* XCRemoteSwiftPackageReference "KeyboardManager" */;
+			productName = KeyboardManager;
 		};
 		98C7FD36270A2E8E001CB4CD /* AutoLayoutSugar */ = {
 			isa = XCSwiftPackageProductDependency;

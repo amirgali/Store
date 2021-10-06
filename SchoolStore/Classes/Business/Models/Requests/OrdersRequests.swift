@@ -34,6 +34,15 @@ enum OrdersRequests: Request {
         }
     }
     
+    var body: Data? {
+        switch self {
+        case let .postOrdersCheckout(productId, size, quantity, house, apartment, etd):
+            return RequestBuilderImpl.encode(["productId": productId, "size": size, "quantity": String(quantity), "house": house, "apartment": apartment, "etd": etd])
+        default:
+            return nil
+        }
+    }
+    
     var mock: Data? {
         switch self {
         case .postOrdersCheckout:
