@@ -8,11 +8,28 @@ enum VCFactory {
     static func buildAuthVC() -> UIViewController? {
         let vc = StoryboardScene.Auth.initialScene.instantiate()
         let authService = CoreFactory.buildAuthService()
-        vc.setup(with: authService)
+        let snacker = CoreFactory.snacker
+        vc.setup(with: authService, snacker)
         return vc
     }
 
     static func buildTabBarVC() -> UIViewController? {
-        StoryboardScene.TabBar.initialScene.instantiate()
+        let tabBarVC = StoryboardScene.TabBar.initialScene.instantiate()
+        tabBarVC.viewControllers?.forEach { vc in
+            guard let nvc = vc as? UINavigationController, let rootVC = nvc.viewControllers.first else {
+                return
+            }
+            switch rootVC {
+            case let vc as ProfileVC:
+                vc.dataService = CoreFactory.dataService
+            case is HistoryVC:
+                break
+            case is CatalogVC:
+                break
+            default:
+                break
+            }
+        }
+        return tabBarVC
     }
 }

@@ -1,66 +1,66 @@
-//
-//  OrdersRequests.swift
-//  SchoolStore
-//
-//  Created by Амиргали Туралинов on 05.10.2021.
+// \HxH School iOS Pass
+// Copyright © 2021 Heads and Hands. All rights reserved.
 //
 
 import Foundation
 
-enum OrdersRequests: Request {
-    case postOrdersCheckout(productId: String, size: String, quantity: Int, house: String, apartment: String?, etd: String)
-    case getOrders
-    case putOrdersIdCancel
-    
+enum OrdersRequest: Request {
+    case arrangeOrder(productId: String, size: String, quantity: String, house: String, apartment: String, etd: String)
+    case listOfOrders
+    case cancel
+
+    // MARK: Internal
+
     var path: String {
         switch self {
-        case .postOrdersCheckout:
+        case .arrangeOrder:
             return "orders/checkout"
-        case .getOrders:
+        case .listOfOrders:
             return "orders"
-        case .putOrdersIdCancel:
+        case .cancel:
             return "orders/{order_id}/cancel"
         }
     }
-    
+
     var method: RequestMethod {
         switch self {
-        case .postOrdersCheckout:
+        case .arrangeOrder:
             return .post
-        case .getOrders:
+        case .listOfOrders:
             return .get
-        case .putOrdersIdCancel:
+        case .cancel:
             return .put
         }
     }
-    
+
     var body: Data? {
         switch self {
-        case let .postOrdersCheckout(productId, size, quantity, house, apartment, etd):
-            return RequestBuilderImpl.encode(["productId": productId, "size": size, "quantity": String(quantity), "house": house, "apartment": apartment, "etd": etd])
+        case let .arrangeOrder(productId, size, quantity, house, apartment, etd):
+            return RequestBuilderImpl
+                .encode(["produtId": productId, "size": size, "quantity": quantity, "house": house, "apartment": apartment, "etd": etd])
         default:
             return nil
         }
     }
-    
+
     var mock: Data? {
         switch self {
-        case .postOrdersCheckout:
-            guard let path = Bundle.main.path(forResource: "postOrdersCheckout", ofType: "json"),
+        case .arrangeOrder:
+            guard let path = Bundle.main.path(forResource: "arrangeOrder", ofType: "json"),
                   let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
             else {
                 return nil
             }
             return data
-        case .getOrders:
-            guard let path = Bundle.main.path(forResource: "getOrders", ofType: "json"),
+        case .listOfOrders:
+            guard let path = Bundle.main.path(forResource: "listOfOrders", ofType: "json"),
                   let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
             else {
                 return nil
             }
             return data
-        case .putOrdersIdCancel:
-            guard let path = Bundle.main.path(forResource: "putOrdersIdCancel", ofType: "json"),
+        case .cancel:
+            guard let path = Bundle.main.path(forResource: "cancelOrder", ofType: "json"),
                   let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
             else {
                 return nil

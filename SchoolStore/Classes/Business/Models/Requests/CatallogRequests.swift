@@ -1,46 +1,44 @@
-//
-//  CatallogRequests.swift
-//  SchoolStore
-//
-//  Created by Амиргали Туралинов on 05.10.2021.
+// \HxH School iOS Pass
+// Copyright © 2021 Heads and Hands. All rights reserved.
 //
 
 import Foundation
 
-enum CatallogRequests: Request {
-    
-    case getProducts
-    case getProductsId
+enum CatalogRequest: Request {
+    case listOfProducts
+    case detailInfo
+
+    // MARK: Internal
 
     var path: String {
         switch self {
-        case .getProducts:
+        case .listOfProducts:
             return "products"
-        case .getProductsId:
+        case .detailInfo:
             return "products/{product_id}"
         }
     }
-    
+
     var method: RequestMethod {
         switch self {
-        case .getProducts:
+        case .listOfProducts:
             return .get
-        case .getProductsId:
+        case .detailInfo:
             return .get
         }
     }
 
     var mock: Data? {
         switch self {
-        case .getProducts:
-            guard let path = Bundle.main.path(forResource: "getProducts", ofType: "json"),
+        case .listOfProducts:
+            guard let path = Bundle.main.path(forResource: "listOfProducts", ofType: "json"),
                   let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
             else {
                 return nil
             }
             return data
-        case .getProductsId:
-            guard let path = Bundle.main.path(forResource: "getProductsId", ofType: "json"),
+        case .detailInfo:
+            guard let path = Bundle.main.path(forResource: "detailsInfo", ofType: "json"),
                   let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
             else {
                 return nil

@@ -11,15 +11,6 @@
         }
       },
       {
-        "package": "KeyboardManager",
-        "repositoryURL": "https://github.com/alphatroya/KeyboardManager",
-        "state": {
-          "branch": null,
-          "revision": "110b1abb66a5ce4c4b6fc8c8c9ab65c8d9db70d2",
-          "version": "1.6.1"
-        }
-      },
-      {
         "package": "KeychainAccess",
         "repositoryURL": "https://github.com/kishikawakatsumi/KeychainAccess",
         "state": {
