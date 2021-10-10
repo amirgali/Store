@@ -10,6 +10,7 @@
 		982CCEEA270BF93F00B35E9E /* CatallogRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982CCEE9270BF93F00B35E9E /* CatallogRequests.swift */; };
 		9845B0AD2712EA1C00AFAF4E /* TTGSnackbar in Frameworks */ = {isa = PBXBuildFile; productRef = 9845B0AC2712EA1C00AFAF4E /* TTGSnackbar */; };
 		9845B0B02712EA5400AFAF4E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 9845B0AF2712EA5400AFAF4E /* KeychainAccess */; };
+		9845B0B22712EB3200AFAF4E /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9845B0B12712EB3200AFAF4E /* InputField.swift */; };
 		986699AE270C6C8800DDB1A8 /* getProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 986699AD270C6C8800DDB1A8 /* getProducts.json */; };
 		986699B0270C6D0800DDB1A8 /* getProductsId.json in Resources */ = {isa = PBXBuildFile; fileRef = 986699AF270C6D0800DDB1A8 /* getProductsId.json */; };
 		986699B2270C72EF00DDB1A8 /* OrdersRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986699B1270C72EF00DDB1A8 /* OrdersRequests.swift */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		982CCEE9270BF93F00B35E9E /* CatallogRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatallogRequests.swift; sourceTree = "<group>"; };
+		9845B0B12712EB3200AFAF4E /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputField.swift; path = "../../../../Swiftbook/Курс 26- Приложения На Основе UITableView/MyPlaces/MyPlaces/InputField.swift"; sourceTree = "<group>"; };
 		986699AD270C6C8800DDB1A8 /* getProducts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getProducts.json; sourceTree = "<group>"; };
 		986699AF270C6D0800DDB1A8 /* getProductsId.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getProductsId.json; sourceTree = "<group>"; };
 		986699B1270C72EF00DDB1A8 /* OrdersRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersRequests.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		C213C1C42704C52700E84711 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				9845B0B12712EB3200AFAF4E /* InputField.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				C21E134F27045CA900867E2E /* TabBarVC.swift in Sources */,
 				C21E135B270464DD00867E2E /* NetworkProvider.swift in Sources */,
 				986699B2270C72EF00DDB1A8 /* OrdersRequests.swift in Sources */,
+				9845B0B22712EB3200AFAF4E /* InputField.swift in Sources */,
 				C21E13552704619D00867E2E /* CoreFactory.swift in Sources */,
 				C21E13202704510C00867E2E /* AppDelegate.swift in Sources */,
 				C21E13592704647900867E2E /* Errors.swift in Sources */,
