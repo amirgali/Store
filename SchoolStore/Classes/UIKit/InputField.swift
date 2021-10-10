@@ -175,7 +175,7 @@ final class InputField: UIView, InputFieldProtocol {
         textField.font = .systemFont(ofSize: 16)
         textField.rightView = eyeView
 
-        backgroundView.backgroundColor = Asset.fieldBacground.color
+        backgroundView.backgroundColor = Asset.fieldBackground.color
     }
 
     private func makeConstraints() {

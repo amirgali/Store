@@ -11,16 +11,58 @@
         <!--History-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="History" id="Y6W-OH-hqX" customClass="HistoryVC" customModule="SchoolStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="O3a-iF-J54">
+                                <rect key="frame" x="0.0" y="88" width="414" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="f9b-bg-cDu"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rft-kb-zki">
+                                <rect key="frame" x="0.0" y="152" width="414" height="661"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="149" id="NRz-zH-Q2c"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="NXS-lb-zBq">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NXS-lb-zBq" id="lpJ-Qf-1dJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="nPb-5A-i4S"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="5iM-3l-zhU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="rft-kb-zki" secondAttribute="bottom" id="6ae-uz-iEk"/>
+                            <constraint firstItem="rft-kb-zki" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="HMd-YM-AAT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rft-kb-zki" secondAttribute="trailing" id="OfT-rn-RJB"/>
+                            <constraint firstItem="rft-kb-zki" firstAttribute="top" secondItem="O3a-iF-J54" secondAttribute="bottom" constant="16" id="Ts6-cO-sG9"/>
+                            <constraint firstItem="O3a-iF-J54" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="gvw-Rd-Pkc"/>
+                            <constraint firstItem="O3a-iF-J54" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="kyf-Pd-nC9"/>
+                            <constraint firstAttribute="trailing" secondItem="O3a-iF-J54" secondAttribute="trailing" id="xaw-Hg-dek"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="mwp-l5-n5u"/>
+                    <navigationItem key="navigationItem" title="Мои заказы" id="mwp-l5-n5u"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1000.0000000000001" y="94.419642857142847"/>
         </scene>

@@ -97,7 +97,7 @@ final class ProductCell: UITableViewCell {
             .bottom(31)
             .left(to: .right(16), of: priceLabel).right(16)
 
-        separatorView.backgroundColor = Asset.fieldBacground.color
+        separatorView.backgroundColor = Asset.fieldBackground.color
         separatorView.bottom().left(16).right(16).height(1)
     }
 }
