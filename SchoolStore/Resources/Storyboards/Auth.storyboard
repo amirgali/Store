@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ME9-Mw-cj0">
-                                <rect key="frame" x="20" y="346.5" width="374" height="273"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ME9-Mw-cj0">
+                                <rect key="frame" x="20" y="346.5" width="374" height="213"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lul-RA-MSP">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
@@ -62,10 +62,6 @@
                                             <action selector="signInPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xHV-y1-NbC"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LHY-9g-AEN" customClass="AuthCustomButton" customModule="SchoolStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="223" width="374" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>

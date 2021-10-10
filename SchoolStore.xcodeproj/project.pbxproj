@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9808DBEC270DD69A00102CC9 /* AuthCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9808DBEB270DD69A00102CC9 /* AuthCustomButton.swift */; };
-		9808DBEE270DD6AB00102CC9 /* AuthCustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9808DBED270DD6AB00102CC9 /* AuthCustomButton.xib */; };
 		982CCEEA270BF93F00B35E9E /* CatallogRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982CCEE9270BF93F00B35E9E /* CatallogRequests.swift */; };
+		9845B0AD2712EA1C00AFAF4E /* TTGSnackbar in Frameworks */ = {isa = PBXBuildFile; productRef = 9845B0AC2712EA1C00AFAF4E /* TTGSnackbar */; };
+		9845B0B02712EA5400AFAF4E /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 9845B0AF2712EA5400AFAF4E /* KeychainAccess */; };
 		986699AE270C6C8800DDB1A8 /* getProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 986699AD270C6C8800DDB1A8 /* getProducts.json */; };
 		986699B0270C6D0800DDB1A8 /* getProductsId.json in Resources */ = {isa = PBXBuildFile; fileRef = 986699AF270C6D0800DDB1A8 /* getProductsId.json */; };
 		986699B2270C72EF00DDB1A8 /* OrdersRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986699B1270C72EF00DDB1A8 /* OrdersRequests.swift */; };
@@ -57,8 +57,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9808DBEB270DD69A00102CC9 /* AuthCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthCustomButton.swift; path = ../../../../../../../Desktop/test/test/AuthCustomButton.swift; sourceTree = "<group>"; };
-		9808DBED270DD6AB00102CC9 /* AuthCustomButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AuthCustomButton.xib; path = ../../../../../../../Desktop/test/test/AuthCustomButton.xib; sourceTree = "<group>"; };
 		982CCEE9270BF93F00B35E9E /* CatallogRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatallogRequests.swift; sourceTree = "<group>"; };
 		986699AD270C6C8800DDB1A8 /* getProducts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getProducts.json; sourceTree = "<group>"; };
 		986699AF270C6D0800DDB1A8 /* getProductsId.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getProductsId.json; sourceTree = "<group>"; };
@@ -111,6 +109,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9845B0B02712EA5400AFAF4E /* KeychainAccess in Frameworks */,
+				9845B0AD2712EA1C00AFAF4E /* TTGSnackbar in Frameworks */,
 				98C7FD37270A2E8E001CB4CD /* AutoLayoutSugar in Frameworks */,
 				986699BB270CC7F100DDB1A8 /* KeyboardManager in Frameworks */,
 			);
@@ -122,8 +122,6 @@
 		C213C1C42704C52700E84711 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				9808DBEB270DD69A00102CC9 /* AuthCustomButton.swift */,
-				9808DBED270DD6AB00102CC9 /* AuthCustomButton.xib */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -377,6 +375,8 @@
 			packageProductDependencies = (
 				98C7FD36270A2E8E001CB4CD /* AutoLayoutSugar */,
 				986699BA270CC7F100DDB1A8 /* KeyboardManager */,
+				9845B0AC2712EA1C00AFAF4E /* TTGSnackbar */,
+				9845B0AF2712EA5400AFAF4E /* KeychainAccess */,
 			);
 			productName = SchoolStore;
 			productReference = C21E131C2704510C00867E2E /* SchoolStore.app */;
@@ -408,6 +408,8 @@
 			packageReferences = (
 				98C7FD35270A2E8E001CB4CD /* XCRemoteSwiftPackageReference "auto-layout-sugar-ios" */,
 				986699B9270CC7F100DDB1A8 /* XCRemoteSwiftPackageReference "KeyboardManager" */,
+				9845B0AB2712EA1C00AFAF4E /* XCRemoteSwiftPackageReference "TTGSnackbar" */,
+				9845B0AE2712EA5400AFAF4E /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = C21E131D2704510C00867E2E /* Products */;
 			projectDirPath = "";
@@ -438,7 +440,6 @@
 				C21E133E27045B1900867E2E /* InfoPlist.strings in Resources */,
 				C21E134D27045C8A00867E2E /* TabBar.storyboard in Resources */,
 				C21E134227045B4900867E2E /* Localizable.stringsdict in Resources */,
-				9808DBEE270DD6AB00102CC9 /* AuthCustomButton.xib in Resources */,
 				986699B8270C7BA000DDB1A8 /* putOrdersIdCancel.json in Resources */,
 				986699B0270C6D0800DDB1A8 /* getProductsId.json in Resources */,
 				C21E13672704674D00867E2E /* History.storyboard in Resources */,
@@ -501,7 +502,6 @@
 				C21E13552704619D00867E2E /* CoreFactory.swift in Sources */,
 				C21E13202704510C00867E2E /* AppDelegate.swift in Sources */,
 				C21E13592704647900867E2E /* Errors.swift in Sources */,
-				9808DBEC270DD69A00102CC9 /* AuthCustomButton.swift in Sources */,
 				C2D720A727048AF000C40EA5 /* AuthResponse.swift in Sources */,
 				C27E0F1D270473A20015530B /* Plist.swift in Sources */,
 				C21E13512704604400867E2E /* AppState.swift in Sources */,
@@ -728,6 +728,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9845B0AB2712EA1C00AFAF4E /* XCRemoteSwiftPackageReference "TTGSnackbar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zekunyan/TTGSnackbar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.5;
+			};
+		};
+		9845B0AE2712EA5400AFAF4E /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.2;
+			};
+		};
 		986699B9270CC7F100DDB1A8 /* XCRemoteSwiftPackageReference "KeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/alphatroya/KeyboardManager";
@@ -747,6 +763,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9845B0AC2712EA1C00AFAF4E /* TTGSnackbar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9845B0AB2712EA1C00AFAF4E /* XCRemoteSwiftPackageReference "TTGSnackbar" */;
+			productName = TTGSnackbar;
+		};
+		9845B0AF2712EA5400AFAF4E /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9845B0AE2712EA5400AFAF4E /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
 		986699BA270CC7F100DDB1A8 /* KeyboardManager */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 986699B9270CC7F100DDB1A8 /* XCRemoteSwiftPackageReference "KeyboardManager" */;
