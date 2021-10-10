@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5E74DC9F682F7103E6003DD3 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E74DFAD2DCF610F9DC7903D /* InputField.swift */; };
+		985AA5E02713655F006E9C58 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985AA5DF2713655F006E9C58 /* CustomTableViewCell.swift */; };
+		985AA5E32713680E006E9C58 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 985AA5E22713680E006E9C58 /* Roboto-Light.ttf */; };
+		985AA5E52713690E006E9C58 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 985AA5E42713690E006E9C58 /* Roboto-Medium.ttf */; };
 		C214165B270DA80B00C40071 /* AutoLayoutSugar in Frameworks */ = {isa = PBXBuildFile; productRef = C214165A270DA80B00C40071 /* AutoLayoutSugar */; };
 		C214165E270DB9E400C40071 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = C214165D270DB9E400C40071 /* KeychainAccess */; };
 		C2141660270DBD1000C40071 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C214165F270DBD1000C40071 /* HistoryVC.swift */; };
@@ -73,6 +76,9 @@
 
 /* Begin PBXFileReference section */
 		5E74DFAD2DCF610F9DC7903D /* InputField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		985AA5DF2713655F006E9C58 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		985AA5E22713680E006E9C58 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "../../../../../../../Desktop/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		985AA5E42713690E006E9C58 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../../../../../../../Desktop/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		C214165F270DBD1000C40071 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 		C2141661270DBD2900C40071 /* CatalogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogVC.swift; sourceTree = "<group>"; };
 		C21E131C2704510C00867E2E /* SchoolStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +155,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		985AA5E1271367F7006E9C58 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				985AA5E22713680E006E9C58 /* Roboto-Light.ttf */,
+				985AA5E42713690E006E9C58 /* Roboto-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		C213C1C42704C52700E84711 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +224,7 @@
 		C21E133627045A6300867E2E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				985AA5E1271367F7006E9C58 /* Fonts */,
 				C2F28B3927048D27000A2703 /* Mocks */,
 				C27E0F172704730D0015530B /* Storyboards */,
 				C21E133A27045AE600867E2E /* Localizable */,
@@ -278,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				C214165F270DBD1000C40071 /* HistoryVC.swift */,
+				985AA5DF2713655F006E9C58 /* CustomTableViewCell.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -500,9 +517,11 @@
 				C2B96D5F270DE9D90012D0E8 /* changeProfileBRerror.json in Resources */,
 				C21E134227045B4900867E2E /* Localizable.stringsdict in Resources */,
 				C21E13672704674D00867E2E /* History.storyboard in Resources */,
+				985AA5E32713680E006E9C58 /* Roboto-Light.ttf in Resources */,
 				C2B96D65270DE9D90012D0E8 /* getProfileBRerror.json in Resources */,
 				C2B96D5C270DE9D90012D0E8 /* arrangeOrder.json in Resources */,
 				C2B96D62270DE9D90012D0E8 /* getProfileForbidden.json in Resources */,
+				985AA5E52713690E006E9C58 /* Roboto-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +602,7 @@
 				C27E0F20270473A20015530B /* StoryboardScenes.swift in Sources */,
 				C275FEEE270DFCBF00431B51 /* ProductCell.swift in Sources */,
 				C2D720A22704869900C40EA5 /* UserRequest.swift in Sources */,
+				985AA5E02713655F006E9C58 /* CustomTableViewCell.swift in Sources */,
 				C2B96D43270DD9A50012D0E8 /* SnackCustomView.swift in Sources */,
 				5E74DC9F682F7103E6003DD3 /* InputField.swift in Sources */,
 				C2B96D4B270DE0A00012D0E8 /* FieldError.swift in Sources */,

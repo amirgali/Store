@@ -11,8 +11,11 @@ final class HistoryVC: UIViewController, UITableViewDataSource, UITableViewDeleg
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell
+        
+        cell.imageOfProduct?.image = UIImage(named: "item.placeholder")
         
         return cell
     }
+    
 }
