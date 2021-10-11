@@ -5,7 +5,9 @@
 import UIKit
 
 final class HistoryVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
         return 1
     }
     
@@ -14,7 +16,7 @@ final class HistoryVC: UIViewController, UITableViewDataSource, UITableViewDeleg
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell
         
         cell.imageOfProduct?.image = UIImage(named: "item.placeholder")
-        
+        tableView.tableFooterView = UIView()
         return cell
     }
     
